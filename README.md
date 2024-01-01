@@ -25,7 +25,7 @@ A: It will be a `false`, as the mapping will be valid, but types are incompatibl
 
 
 Q: In case of nested objects, what happens to the nested object? Will it use the default `Equals` method?
-A: There is an optional parameter that you can set called `recursivelyCheckInnerObjects`. By default it does.
+A: There is an optional parameter that you can set called `recursivelyCheckInnerObjects`. By default it does, but if the parameter is set to `true` it will instead recursively call `ValueEquals` for all properties which are Classes (structures are treated with `Equals`).
 
 
 Q: Mapping nullables and non-nullables?

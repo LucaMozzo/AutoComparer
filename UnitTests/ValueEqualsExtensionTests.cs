@@ -306,11 +306,20 @@ namespace UnitTests
                 Car = new Car
                 {
                     Make = car.Make,
-                    Model = car.Model
+                    Model = "Yaris"
                 }
             };
 
             Assert.IsFalse(employee1.ValueEquals(employee2));
+        }
+
+        [TestMethod]
+        public void ComparedEmployeeIsNull()
+        {
+            Employee employee = null;
+            var result = _employee.ValueEquals(employee);
+
+            Assert.IsFalse(result);
         }
     }
 }
