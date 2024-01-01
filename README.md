@@ -1,3 +1,4 @@
+[![NuGet](https://img.shields.io/nuget/v/AutoComparer.svg)](https://www.nuget.org/packages/AutoComparer/)
 # AutoComparer
 This library aims to provide a simple extension method which compares properties across objects without having to define a custom hashcode override.
 
